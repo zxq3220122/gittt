@@ -16,8 +16,44 @@
 
 @implementation DetailViewController
 
+- (void)createAlertButton
+{
+    CALayer *alertLayer = [[CALayer alloc] init];
+    alertLayer.frame = CGRectMake(0, 0, 50, 30);
+    alertLayer.backgroundColor = [UIColor whiteColor].CGColor;
+    alertLayer.shadowOffset = CGSizeMake(0, 0);
+    alertLayer.shadowColor = [UIColor grayColor].CGColor;
+    alertLayer.shadowOpacity = 1;
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"shadowColor"];
+    animation.fromValue = (id)[UIColor whiteColor].CGColor;
+    animation.toValue = (id)[UIColor redColor].CGColor;
+    animation.duration = 0.5f;
+    animation.autoreverses = YES;
+    animation.repeatCount = CGFLOAT_MAX;
+    animation.removedOnCompletion=NO;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [alertLayer addAnimation:animation forKey:nil];
+    
+    UIButton *alertBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    alertBtn.frame = CGRectMake(40, 300, 50, 30);
+    [alertBtn setTitle:@"警告" forState:UIControlStateNormal];
+    [alertBtn.layer addSublayer:alertLayer];
+//    alertBtn.layer.cornerRadius = 5;
+    [self.view addSubview:alertBtn];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self createAlertButton];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
+    
     
     switch ([self.param intValue]) {
         case 0:
@@ -228,10 +264,7 @@
     [self.view exchangeSubviewAtIndex:0 withSubviewAtIndex:1];
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

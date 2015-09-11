@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *label;
 @property (nonatomic, strong) NSString *param;
 @end
