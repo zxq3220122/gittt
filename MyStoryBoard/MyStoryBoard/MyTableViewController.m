@@ -112,7 +112,6 @@
 //    if ([detailVC respondsToSelector:@selector(setParam:)]) {
 //        [detailVC setValue:selected forKey:@"param"];
 //    }
-    NSLog(@"A");
 }
 
 
@@ -122,13 +121,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    NSLog(@"B");
     NSIndexPath *selectedIndex = [self.tableView indexPathForCell:sender];
     
-//    DetailViewController *detailVC = [segue destinationViewController];
-    
-    
-    DetailViewController *detailVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"Detail"];
+    DetailViewController *detailVC = [segue destinationViewController];
     
     if ([detailVC respondsToSelector:@selector(setParam:)]) {
         [detailVC setValue:((Model *)[self.dataArray objectAtIndex:selectedIndex.row]).subTitle forKey:@"param"];

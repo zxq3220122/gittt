@@ -19,6 +19,8 @@
 		BB39EEED1B9E88D3001AE0B4 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB39EEEC1B9E88D3001AE0B4 /* MyTabBarController.m */; };
 		BB39EEF01B9E8EA4001AE0B4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB39EEEF1B9E8EA4001AE0B4 /* DetailViewController.m */; };
 		BB39EEF21B9EE518001AE0B4 /* 武松.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB39EEF11B9EE518001AE0B4 /* 武松.jpg */; };
+		BB99CBE01BA2A92700192A78 /* FKBasicAnimationBox.m in Sources */ = {isa = PBXBuildFile; fileRef = BB99CBDF1BA2A92700192A78 /* FKBasicAnimationBox.m */; };
+		BB99CBE21BA2B74D00192A78 /* 姜太公.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB99CBE11BA2B74D00192A78 /* 姜太公.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,9 @@
 		BB39EEEE1B9E8EA4001AE0B4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		BB39EEEF1B9E8EA4001AE0B4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		BB39EEF11B9EE518001AE0B4 /* 武松.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "武松.jpg"; sourceTree = "<group>"; };
+		BB99CBDE1BA2A92700192A78 /* FKBasicAnimationBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKBasicAnimationBox.h; sourceTree = "<group>"; };
+		BB99CBDF1BA2A92700192A78 /* FKBasicAnimationBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKBasicAnimationBox.m; sourceTree = "<group>"; };
+		BB99CBE11BA2B74D00192A78 /* 姜太公.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "姜太公.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BB39EEF11B9EE518001AE0B4 /* 武松.jpg */,
+				BB99CBE11BA2B74D00192A78 /* 姜太公.jpg */,
 				BB39EEC31B9E7DCB001AE0B4 /* AppDelegate.h */,
 				BB39EEC41B9E7DCB001AE0B4 /* AppDelegate.m */,
 				BB39EEC61B9E7DCB001AE0B4 /* ViewController.h */,
@@ -108,6 +114,8 @@
 				BB39EEEF1B9E8EA4001AE0B4 /* DetailViewController.m */,
 				BB39EEE81B9E8512001AE0B4 /* Model.h */,
 				BB39EEE91B9E8512001AE0B4 /* Model.m */,
+				BB99CBDE1BA2A92700192A78 /* FKBasicAnimationBox.h */,
+				BB99CBDF1BA2A92700192A78 /* FKBasicAnimationBox.m */,
 				BB39EEC91B9E7DCB001AE0B4 /* Main.storyboard */,
 				BB39EECC1B9E7DCB001AE0B4 /* Images.xcassets */,
 				BB39EECE1B9E7DCB001AE0B4 /* LaunchScreen.xib */,
@@ -226,6 +234,7 @@
 				BB39EEF21B9EE518001AE0B4 /* 武松.jpg in Resources */,
 				BB39EED01B9E7DCB001AE0B4 /* LaunchScreen.xib in Resources */,
 				BB39EECD1B9E7DCB001AE0B4 /* Images.xcassets in Resources */,
+				BB99CBE21BA2B74D00192A78 /* 姜太公.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +256,7 @@
 				BB39EEC51B9E7DCB001AE0B4 /* AppDelegate.m in Sources */,
 				BB39EEC21B9E7DCB001AE0B4 /* main.m in Sources */,
 				BB39EEE71B9E84B8001AE0B4 /* MyTableViewController.m in Sources */,
+				BB99CBE01BA2A92700192A78 /* FKBasicAnimationBox.m in Sources */,
 				BB39EEEA1B9E8512001AE0B4 /* Model.m in Sources */,
 				BB39EEED1B9E88D3001AE0B4 /* MyTabBarController.m in Sources */,
 				BB39EEF01B9E8EA4001AE0B4 /* DetailViewController.m in Sources */,
@@ -444,6 +454,7 @@
 				BB39EEE11B9E7DCB001AE0B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB39EEE21B9E7DCB001AE0B4 /* Build configuration list for PBXNativeTarget "MyStoryBoardTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +463,7 @@
 				BB39EEE41B9E7DCB001AE0B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
