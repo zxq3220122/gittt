@@ -9,6 +9,8 @@
 #import "MyTableViewController.h"
 #import "Model.h"
 #include "DetailViewController.h"
+#import "CollectionView.h"
+
 @interface MyTableViewController ()
 {
     NSString *selected;
@@ -112,6 +114,10 @@
 //    if ([detailVC respondsToSelector:@selector(setParam:)]) {
 //        [detailVC setValue:selected forKey:@"param"];
 //    }
+    
+    CollectionView *co = [[CollectionView alloc] init];
+    [self presentViewController:co animated:YES completion:nil];
+    
 }
 
 

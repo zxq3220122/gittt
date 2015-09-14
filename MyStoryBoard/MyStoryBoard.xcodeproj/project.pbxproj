@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB2815CD1BA6741600F471AC /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2815CB1BA6741600F471AC /* CollectionView.m */; };
+		BB2815CE1BA6741600F471AC /* CollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2815CC1BA6741600F471AC /* CollectionView.xib */; };
+		BB2815D11BA69B6E00F471AC /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB2815D01BA69B6E00F471AC /* CollectionViewCell.m */; };
 		BB39EEC21B9E7DCB001AE0B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB39EEC11B9E7DCB001AE0B4 /* main.m */; };
 		BB39EEC51B9E7DCB001AE0B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB39EEC41B9E7DCB001AE0B4 /* AppDelegate.m */; };
 		BB39EEC81B9E7DCB001AE0B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB39EEC71B9E7DCB001AE0B4 /* ViewController.m */; };
@@ -34,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB2815CA1BA6741600F471AC /* CollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		BB2815CB1BA6741600F471AC /* CollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		BB2815CC1BA6741600F471AC /* CollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionView.xib; sourceTree = "<group>"; };
+		BB2815CF1BA69B6E00F471AC /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		BB2815D01BA69B6E00F471AC /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		BB39EEBC1B9E7DCB001AE0B4 /* MyStoryBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStoryBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB39EEC01B9E7DCB001AE0B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB39EEC11B9E7DCB001AE0B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +120,11 @@
 				BB39EEE61B9E84B8001AE0B4 /* MyTableViewController.m */,
 				BB39EEEE1B9E8EA4001AE0B4 /* DetailViewController.h */,
 				BB39EEEF1B9E8EA4001AE0B4 /* DetailViewController.m */,
+				BB2815CA1BA6741600F471AC /* CollectionView.h */,
+				BB2815CB1BA6741600F471AC /* CollectionView.m */,
+				BB2815CC1BA6741600F471AC /* CollectionView.xib */,
+				BB2815CF1BA69B6E00F471AC /* CollectionViewCell.h */,
+				BB2815D01BA69B6E00F471AC /* CollectionViewCell.m */,
 				BB39EEE81B9E8512001AE0B4 /* Model.h */,
 				BB39EEE91B9E8512001AE0B4 /* Model.m */,
 				BB99CBDE1BA2A92700192A78 /* FKBasicAnimationBox.h */,
@@ -230,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2815CE1BA6741600F471AC /* CollectionView.xib in Resources */,
 				BB39EECB1B9E7DCB001AE0B4 /* Main.storyboard in Resources */,
 				BB39EEF21B9EE518001AE0B4 /* 武松.jpg in Resources */,
 				BB39EED01B9E7DCB001AE0B4 /* LaunchScreen.xib in Resources */,
@@ -252,11 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB2815CD1BA6741600F471AC /* CollectionView.m in Sources */,
 				BB39EEC81B9E7DCB001AE0B4 /* ViewController.m in Sources */,
 				BB39EEC51B9E7DCB001AE0B4 /* AppDelegate.m in Sources */,
 				BB39EEC21B9E7DCB001AE0B4 /* main.m in Sources */,
 				BB39EEE71B9E84B8001AE0B4 /* MyTableViewController.m in Sources */,
 				BB99CBE01BA2A92700192A78 /* FKBasicAnimationBox.m in Sources */,
+				BB2815D11BA69B6E00F471AC /* CollectionViewCell.m in Sources */,
 				BB39EEEA1B9E8512001AE0B4 /* Model.m in Sources */,
 				BB39EEED1B9E88D3001AE0B4 /* MyTabBarController.m in Sources */,
 				BB39EEF01B9E8EA4001AE0B4 /* DetailViewController.m in Sources */,
@@ -337,7 +353,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -386,6 +402,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyStoryBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -396,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyStoryBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
